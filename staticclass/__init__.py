@@ -1,0 +1,2 @@
+from decorators import not_static
+from static_class import StaticClass

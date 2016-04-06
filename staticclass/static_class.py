@@ -1,3 +1,6 @@
+import inspect
+
+
 class StaticMetaClass(type):
     def __new__(cls, name, parents, dct):
         for attr_name, item in dct.items():
@@ -8,7 +11,7 @@ class StaticMetaClass(type):
 
     @staticmethod
     def _can_be_static(attr_name, attr):
-        is_function = hasattr(attr, '__call__')
+        is_function = inspect.isfunction(attr)
         is_protected = attr_name.startswith('__') or getattr(attr, '__notstatic__', False)
         return is_function and not is_protected
 

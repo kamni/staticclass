@@ -1,0 +1,5 @@
+1. Docstrings on classes
+2. Needs to work for both python 2 and python 3
+3. tox + coverage
+4. more detailed setup.py
+5. remove TODO

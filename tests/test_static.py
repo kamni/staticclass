@@ -5,7 +5,7 @@ import unittest
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, PROJECT_DIR)
 
-from staticclass.static_class import StaticClass, StaticMetaClass
+from staticclass.static import StaticClass, StaticMetaClass
 
 
 class StaticMetaClassTests(unittest.TestCase):

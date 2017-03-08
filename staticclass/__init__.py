@@ -1,2 +1,2 @@
-from decorators import not_static
-from static_class import StaticClass
+from staticclass.decorators import not_static
+from staticclass.static import StaticClass
